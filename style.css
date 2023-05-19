@@ -1,0 +1,72 @@
+body {
+  font-family: "Cormorant Garamond", serif;
+  color: #D4D4D4;
+  background-color: rgba(66, 66, 66, 0.1);
+  background-image: url("background-image.jpg");
+}
+
+header {
+  position: absolute;
+  left: 493px;
+  top: 75px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+
+header ul li a {
+  font-size: 24px;
+  text-decoration: underline;
+  color: #D4D4D4;
+}
+
+#intro {
+  position: absolute;
+  left: 493px;
+  top: 168px;
+  text-align: left;
+}
+
+#description {
+  position: absolute;
+  left: 493px;
+  top: 304px;
+  text-align: left;
+}
+
+#about-me {
+  position: absolute;
+  left: 493px;
+  top: 407px;
+  text-align: left;
+}
+
+#about-me h3 {
+  font-weight: bold;
+}
+
+#about-me p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#projects {
+  position: absolute;
+  left: 493px;
+  top: 466px;
+  text-align: left;
+}
+
+#projects h3 {
+  font-weight: bold;
+}
+
+/* Add any additional styling rules as needed */
