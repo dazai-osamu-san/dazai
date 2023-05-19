@@ -1,72 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Cormorant Garamond", serif;
   color: #D4D4D4;
-  background-color: rgba(66, 66, 66, 0.1);
+  background-color: #424242;
   background-image: url("background-image.jpg");
+  background-size: 170%;
+  background-position: -1247px -1000px;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 }
 
-header {
-  position: absolute;
-  left: 493px;
+.all-container {
+  width: 936px;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding-top: 75px;
+}
+
+nav ul{
+  /*padding-top: 75px;*/
+  display:flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 936px;
+  height: 29px;
+  left: 492px;
   top: 75px;
 }
 
-header ul {
-  list-style-type: none;
-  display: flex;
-}
-
-header ul li {
-  margin-right: 20px;
-}
-
-header ul li a {
+nav ul li a{
   font-size: 24px;
-  text-decoration: underline;
   color: #D4D4D4;
+  text-decoration: underline;
 }
 
-#intro {
-  position: absolute;
-  left: 493px;
-  top: 168px;
-  text-align: left;
+.main-container{
+  padding-top: 168px;
+  
 }
-
-#description {
-  position: absolute;
-  left: 493px;
-  top: 304px;
-  text-align: left;
-}
-
-#about-me {
-  position: absolute;
-  left: 493px;
-  top: 407px;
-  text-align: left;
-}
-
-#about-me h3 {
-  font-weight: bold;
-}
-
-#about-me p {
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-#projects {
-  position: absolute;
-  left: 493px;
-  top: 466px;
-  text-align: left;
-}
-
-#projects h3 {
-  font-weight: bold;
-}
-
-/* Add any additional styling rules as needed */
