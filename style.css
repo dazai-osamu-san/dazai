@@ -11,7 +11,7 @@ body {
   background-color: rgba(66, 66, 66, 0.7);
   background-image: url("background-image.jpg");
   background-size: 150%;
-  background-position: auto auto;
+  background-position: fill;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
