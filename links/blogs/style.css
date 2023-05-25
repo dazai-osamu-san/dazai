@@ -9,25 +9,35 @@ body {
   font-family: "Cormorant Garamond", serif;
   color: #D4D4D4;
   background-color: rgba(66, 66, 66, 0.7);
-  background-image: url("background-image.jpg");
+  background-position: relative;
+  background-image: url("../../background-image.jpg");
   background-size: 150%;
   background-position: fill;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
 
+#startrailphoto {
+  width:50%;
+  height:50%;
+}
+
 .all-container {
+  display:flex;
+  flex-direction: column;
   width: 936px;
   margin: 0 auto;
 }
+
 nav{
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-evenly;
   padding-top: 75px;
 }
 
 nav ul{
+  align-items: center;
   /*padding-top: 75px;*/
   display:flex;
   list-style: none;
@@ -49,11 +59,23 @@ nav ul li a{
   flex-direction: column;
   padding-top: 64px;
 }
-.main-container .main-text h1 {
-  font-size: 96px;
+.blog-post-container h1 {
+  padding-top: 75px;
+  font-size: 64px;
   padding-bottom: 20px;
   text-decoration: none;
   font-weight: normal;
+}
+
+.blog-post-container ul {
+  font-size: 24px;
+  color: #D4D4D4;
+  padding-left: 30px;
+  padding-top: 30px;
+  list-style: none;
+}
+.blog-post-container ul li a{
+  color:#D4D4D4;
 }
 
 .main-container .main-text h3 {

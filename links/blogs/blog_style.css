@@ -9,25 +9,44 @@ body {
   font-family: "Cormorant Garamond", serif;
   color: #D4D4D4;
   background-color: rgba(66, 66, 66, 0.7);
-  background-image: url("background-image.jpg");
+  background-position: relative;
+  background-image: url("../../background-image.jpg");
   background-size: 150%;
   background-position: fill;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
 
-.all-container {
+.startrail {
+  display:flex;
+  justify-content: center;
+  border-image-width: 10px;
+}
+
+.startrail img {
+  width: 85%;
+  height:85%;
+  border: #D4D4D4 solid 4px;
+  border-radius: 2px;
+}
+
+.main-container {
+  display:flex;
+  flex-direction: column;
   width: 936px;
   margin: 0 auto;
 }
+
 nav{
   display: flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-evenly;
   padding-top: 75px;
 }
 
 nav ul{
+  align-items: center;
   /*padding-top: 75px;*/
   display:flex;
   list-style: none;
@@ -44,41 +63,58 @@ nav ul li a{
   text-decoration: underline;
 }
 
-.main-container{
+.content{
   display: flex;
   flex-direction: column;
   padding-top: 64px;
 }
-.main-container .main-text h1 {
-  font-size: 96px;
+.content h1 {
+  padding-top: 75px;
+  font-size: 64px;
   padding-bottom: 20px;
   text-decoration: none;
   font-weight: normal;
 }
 
-.main-container .main-text h3 {
-  font-size: 32px;
-  font-weight:normal;
-  overflow: hidden;
-  border-right: 1px solid #D4D4D4;
-  border-top: 32px;
-  white-space: nowrap;
-  margin: 0 0;
-  animation: typewriter 4s steps(50) 1s 1 normal both, blinkTextCursor 800ms steps(12) 5s infinite normal;
+.content h2 {
+  padding-top: 40px;
+  font-size: 48px;
 }
 
-@keyframes typewriter {
-  from{ width: 0; } to { width: 583px; }
+
+.content p {
+  padding-top: 20px;
+  font-size: 24px;
+  color:#D4D4D4;
 }
 
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: #D4D4D4;
-  }
-  to {
-    border-right-color: transparent;
-  }
+.content ul {
+  font-size: 24px;
+  color: #D4D4D4;
+  padding-left: 30px;
+  padding-top: 30px;
+  list-style: none;
 }
+.content ul li {
+  padding-top: 20px;
+}
+.content ul li a{
+  color:#D4D4D4;
+}
+
+.btt {
+  display: flex;
+  justify-content: center;
+}
+
+
+.back-to-top{
+  font-size: 24px;
+  color: #D4D4D4;
+  text-decoration: underline;
+}
+
+
 .main-container .secondary-text {
   padding-top: 64px;
 }
