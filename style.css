@@ -15,6 +15,8 @@ body {
   width: 936px;
   margin: 0 auto;
 }
+
+// NAVIGATION BAR //
 nav{
   display: flex;
   align-items: left;
@@ -38,6 +40,8 @@ nav ul li a{
   text-decoration: underline;
 }
 
+
+// MAIN //
 .main-container{
   display: flex;
   flex-direction: column;
@@ -91,6 +95,9 @@ nav ul li a{
 }
 
 
+
+
+// PHONE OPTIMIZATION //
 @media(max-width: 500px){
   *{
     padding:0;
