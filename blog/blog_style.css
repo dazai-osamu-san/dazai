@@ -7,15 +7,8 @@
 
 body {
   font-family: "Cormorant Garamond", serif;
-  color: #D4D4D4;
-  background-color: rgba(66, 66, 66, 0.7);
-  background-position: relative;
-  background-image: url("../../background-image.jpg");
-  background-size: 150%;
-  background-position: fill;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  color: #424242;
+  background-color: #D4D4D4;
 }
 
 .startrail {
@@ -59,7 +52,7 @@ nav ul{
 
 nav ul li a{
   font-size: 24px;
-  color: #D4D4D4;
+  color: #424242;
   text-decoration: underline;
 }
 
@@ -68,6 +61,7 @@ nav ul li a{
   flex-direction: column;
   padding-top: 64px;
 }
+
 .content h1 {
   padding-top: 75px;
   font-size: 64px;
@@ -85,12 +79,12 @@ nav ul li a{
 .content p {
   padding-top: 20px;
   font-size: 24px;
-  color:#D4D4D4;
+  color:#424242;
 }
 
 .content ul {
   font-size: 24px;
-  color: #D4D4D4;
+  color: #424242;
   padding-left: 30px;
   padding-top: 30px;
   list-style: none;
@@ -99,14 +93,13 @@ nav ul li a{
   padding-top: 20px;
 }
 .content ul li a{
-  color:#D4D4D4;
+  color: #424242;
 }
 
 .btt {
   display: flex;
   justify-content: center;
 }
-
 
 .back-to-top{
   font-size: 24px;
@@ -127,10 +120,6 @@ nav ul li a{
   padding-top: 11px;
   font-size: 24px;
 }
-#projects {
-  display: none;
-  padding-top: 64px;
-}
 
 
 @media(max-width: 500px){
@@ -138,55 +127,70 @@ nav ul li a{
     padding:0;
     margin:0;
   }
-  body{
-    background-image: url("background-image.jpg");
-    background-size: auto;
-  }
-  .all-container{
+
+  nav{
     width: 360px;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding-top: 75px;
   }
+  
+  nav ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 723px;
+    height: 29px;
+    left: 492px;
+    top: 75px;
+  }
+  
+  nav ul li a{
+    font-size: 18px;
+    color: #424242;
+    text-decoration: underline;
+  }
+
   .main-container{
+    width: 350px;
+    display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 0px;
     align-items: center;
   }
-  .main-container .main-text{
+  .main-container .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 87px;
+    padding-top: 10px;
   }
-  .main-container .main-text h1{
+  .main-container .content h1{
     padding-left: 0px;
     font-size: 48px;
   }
-  .main-container .main-text h3 {
-    font-size: 18px;
-    font-weight: normal;
+  .main-container .content h2 {
+    font-size: 36px;
+    font-weight: bold;
   }
-  .main-container .secondary-text{
+  .main-container .content p {
     padding-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #about-me {
-    font-size: 26px;
-    padding-top:47px;
-    text-align: center;
-  }
-  .main-container .secondary-text p{
-    padding: 15px 16px;
     font-size: 20px;
-    text-align: center;
+  }
+  .content ul {
+    font-size: 20px;
+    color: #424242;
+    padding-left: 10px;
+    padding-top: 30px;
+    list-style: none;
   }
 
-  @keyframes typewriter {
-    from{ width: 0; } to { width: 328px; }
-  }
-
-  #projects, nav ul {
-    display:none;
+  .main-container .content ul li{
+    font-size: 20px;
+    text-align: left;
   }
 }

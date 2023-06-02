@@ -7,13 +7,8 @@
 
 body {
   font-family: "Cormorant Garamond", serif;
-  color: #D4D4D4;
-  background-color: rgba(66, 66, 66, 0.7);
-  background-image: url("background-image.jpg");
-  background-size: 150%;
-  background-position: fill;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  color: #424242;
+  background-color: #D4D4D4;
 }
 
 .all-container {
@@ -28,7 +23,6 @@ nav{
 }
 
 nav ul{
-  /*padding-top: 75px;*/
   display:flex;
   list-style: none;
   justify-content: space-evenly;
@@ -40,7 +34,7 @@ nav ul{
 
 nav ul li a{
   font-size: 24px;
-  color: #D4D4D4;
+  color: #424242;
   text-decoration: underline;
 }
 
@@ -49,6 +43,7 @@ nav ul li a{
   flex-direction: column;
   padding-top: 64px;
 }
+
 .main-container .main-text h1 {
   font-size: 96px;
   padding-bottom: 20px;
@@ -60,28 +55,31 @@ nav ul li a{
   font-size: 32px;
   font-weight:normal;
   overflow: hidden;
-  border-right: 1px solid #D4D4D4;
+  border-right: 1px solid #424242;
   border-top: 32px;
   white-space: nowrap;
   margin: 0 0;
   animation: typewriter 4s steps(50) 1s 1 normal both, blinkTextCursor 800ms steps(12) 5s infinite normal;
+  }
+
+  @keyframes typewriter {
+    from{ width: 0; } to { width: 583px; }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: #424242;
+    }
+    to {
+      border-right-color: transparent;
+    }
 }
 
-@keyframes typewriter {
-  from{ width: 0; } to { width: 583px; }
-}
 
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: #D4D4D4;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
 .main-container .secondary-text {
   padding-top: 64px;
 }
+
 .main-container .secondary-text h4 {
   font-size: 40px;
   font-weight: bold;
@@ -91,10 +89,6 @@ nav ul li a{
   padding-top: 11px;
   font-size: 24px;
 }
-#projects {
-  display: none;
-  padding-top: 64px;
-}
 
 
 @media(max-width: 500px){
@@ -102,44 +96,78 @@ nav ul li a{
     padding:0;
     margin:0;
   }
-  body{
-    background-image: url("background-image.jpg");
-    background-size: auto;
+ 
+
+  nav{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    padding-top: 75px;
   }
+  
+  nav ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 723px;
+    height: 29px;
+    left: 492px;
+    top: 75px;
+  }
+  
+  nav ul li a{
+    font-size: 18px;
+    color: #424242;
+    text-decoration: underline;
+  }
+  /****************************************************/
+  /* body{                                            */
+  /*   background-image: url("background-image.jpg"); */
+  /*   background-size: auto;                         */
+  /* }                                                */
+  /****************************************************/
+
   .all-container{
     width: 360px;
     align-items: center;
   }
+  
   .main-container{
     flex-wrap: wrap;
     padding-top: 0px;
     align-items: center;
   }
+
   .main-container .main-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 87px;
   }
+
   .main-container .main-text h1{
     padding-left: 0px;
     font-size: 48px;
   }
+
   .main-container .main-text h3 {
     font-size: 18px;
     font-weight: normal;
   }
+
   .main-container .secondary-text{
     padding-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   #about-me {
     font-size: 26px;
     padding-top:47px;
     text-align: center;
   }
+
   .main-container .secondary-text p{
     padding: 15px 16px;
     font-size: 20px;
@@ -148,9 +176,5 @@ nav ul li a{
 
   @keyframes typewriter {
     from{ width: 0; } to { width: 328px; }
-  }
-
-  #projects, nav ul {
-    display:none;
-  }
+  } 
 }
