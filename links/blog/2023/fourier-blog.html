@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dazai - home</title>
+  <link rel="stylesheet" href="../blog_style.css">
+</head>
+
+
+<body onload="document.body.style.opacity='1'">
+    <div class="main-container">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">blog</a>
+          </li>
+    
+          <li>
+            <a href="../projects.html">projects</a>
+          </li>
+          
+          <li>
+            <a href="../index.html">about me</a>
+          </li>
+        
+        </ul>
+        </nav>
+<div class="content">
+<h2 id="what-is-fourier-series-and-how-it-came-to-be">What is fourier
+    series and how it came to be?</h2>
+    <p>The Fourier series is a mathematical concept which was developed by
+    the French mathematician Jean-Baptiste Fourier in the early 19th
+    century. He engraved his name in the mathematics hall of fame with the
+    groundbreaking discovery of Fourier series.</p>
+    <p>Fourier's key insight was that any function could be decomposed into
+    a sum of sine and cosine waves with different amplitudes and
+    frequencies. This discovery laid the foundation many areas science like
+    physics, telecommunication etc.</p>
+    <p>Fourier derived a formula which is now known as the Fourier series
+    which provides a systematic way of expressing any function (provided it
+    matches dilichet's <sup>1</sup></a> conditions) as an infinite sum of
+    sines and cosines.</p>
+    <p>All of this is quite a bit to understand just through words, so lets
+    look at a small animation which will help us understand a bit easier.
+    (This animation was taken from 3b1b's video on this very topic. Wtach
+    the video after reading this!)</p>
+    <p><strong><strong>Add gif here</strong></strong></p>
+    <p>Pretty cool right!? Now lets take a look at the maths.</p>
+    <h3 id="the-formula">The formula</h3>
+    <p>According to the statement lets consider a function <span
+    class="math inline"><em>f</em>(<em>x</em>)</span> with a period <span
+    class="math inline"><em>T</em></span> defined on an interval <span
+    class="math inline">[−<em>π</em>,<em>π</em>]</span>. Then the fourier
+    series rerpresentation of <span
+    class="math inline"><em>f</em>(<em>x</em>)</span> is given by: <span
+    class="math display"><em>f</em>(<em>t</em>) = <em>a</em><sub>0</sub> + ∑[<em>a</em><sub><em>n</em></sub>cos<em>n</em><em>ω</em><em>t</em>+<em>b</em><sub><em>n</em></sub>sin<em>n</em><em>ω</em><em>t</em>]</span></p>
+    <p>where</p>
+    <ul>
+    <li>a<sub>0</sub> is the constant term</li>
+    <li><span class="math inline"><em>a</em><sub><em>n</em></sub></span> and
+    <span class="math inline"><em>b</em><sub><em>n</em></sub></span> are
+    called fourier and <span class="math inline"><em>n</em></span> is a
+    positive integer</li>
+    <li><span class="math inline"><em>ω</em></span> is the fundamental
+    frequency.</li>
+    </ul>
+    <h2 id="section"></h2>
+    <h3 id="calculating-fourier-coefficients-and-the-constant">Calculating
+    Fourier coefficients and the constant</h3>
+    <p>The fourier coefficients can be found using these formulae: <span
+    class="math display">$$a_{0} = \frac{1}{2 \pi} \int^{\pi}_{-\pi}f(x)
+    dt$$</span></p>
+    <p><span class="math display">$$a_n = \frac{1}{\pi}
+    \int_{-\pi}^{\pi}f(x)\cos{nx}dx$$</span></p>
+    <p><span class="math display">$$b_n = \frac{1}{\pi} \int^{\pi}_{-\pi}
+    f(x)\sin{nx}dx$$</span></p>
+    <p>Where <span class="math inline">∀ <em>n</em> ∈ <em>N</em></span></p>
+    <h3 id="breaking-down-the-math">Breaking down the math</h3>
+    <p>Looking at the statement we can very easily understand how the
+    formula came to be.</p>
+    <p>As we know, a Fourier series is a decomposition of a function into
+    sine and cosine waves, and the sum of these waves of different
+    frequencies uptill infinity very closely represents the original
+    function <span class="math inline"><em>f</em>(<em>x</em>)</span>, thus
+    the term "<span class="math display">$$\sum_{n=1}^{\infty}$$</span>"
+    which means sum of all terms for <span
+    class="math inline"><em>n</em> = 1</span> to infinity.</p>
+    <p>Obviously there is no such thing as <em>infinite</em>, but the more
+    number of terms you add the closer it represents to the original
+    function, so <em>tending</em> to infinity.</p>
+    <p>Now the coefficients are what decide the frequency and amplitude of
+    each of the waves. Now the constant term <span
+    class="math inline"><em>a</em><sub>0</sub></span> is the average of all
+    the outputs of the function over the certain interval, yeilding equation
+    <span class="math inline">$a_{0} = \frac{1}{2 \pi} \int^{\pi}_{-\pi}f(x)
+    dt$</span>.</p>
+    <p>If we break this down into <span
+    class="math inline"><em>f</em>(<em>x</em>)</span> into the sums again
+    and integrate individual terms, there will be only one term whose
+    integral will be a constant number and all others will be 0. This one
+    constant term is <span
+    class="math inline"><em>a</em><sub>0</sub></span>.</p>
+    <p>Wow if we multiply <span
+    class="math inline"><em>f</em>(<em>x</em>)</span> by some other term,
+    and then repeat the above step again, then some nth term will be the
+    constant term, which is actually $a<sub>n</sub>$! Here we are
+    multiplying each term with a sine wave, Thus the equation: <span
+    class="math display">$$a_n = \frac{1}{\pi}
+    \int_{-\pi}^{\pi}f(x)\sin{nx}dx$$</span>.</p>
+    <p>And similarly we can also calculate <span
+    class="math inline"><em>b</em><sub><em>n</em></sub></span>.</p>
+    <p>Lets understand this better by solving a question. Consider the
+    following function.</p>
+    <p><span class="math display">$$f(x) = \begin{cases}
+    -k &amp; \text{when } -\pi &lt; x &lt; 0 \\
+    +k &amp; \text{when } 0 &lt; x &lt; \pi
+    \end{cases}$$</span></p>
+    <p>The graph of the function will look like this <span
+    class="spurious-link"
+    target="~/graph1.png"><em>~/graph1.png</em></span></p>
+    <p>Now we need to find the right sum of sines and cosines which will
+    closely represent this function. First we need to find the constant
+    <span class="math inline"><em>a</em><sub>0</sub></span>. Let's use the
+    formula</p>
+    <p><span class="math display">$$a_{0} = \frac{1}{2 \pi}
+    \int^{\pi}_{-\pi}f(x) dt$$</span></p>
+    <p>Since this function is discontinious we can break it down into two,
+    So from <span class="math inline"> − <em>π</em></span> to <span
+    class="math inline">0</span> the value of the function f(x) will be
+    <span class="math inline"> − <em>k</em></span> and from 0 to <span
+    class="math inline"><em>π</em></span> it will be k, <span
+    class="math inline">∴</span></p>
+    <p><span class="math display">$$a_0 = \frac{1}{2 \pi}[ \int_{-\pi}^{0}-k
+    dx + \int_{0}^{\pi}k dx]$$</span></p>
+    <p>Solving this integral we get the answer:</p>
+    <p><span class="math display"><em>a</em><sub>0</sub> = 0</span></p>
+    <p>To the keen eyes, this result was obvious, as <span
+    class="math inline"><em>a</em><sub>0</sub></span> is the average value
+    over the entire period, it is infact 0 in this case. Let's move on to
+    calculating <span
+    class="math inline"><em>a</em><sub><em>n</em></sub></span> now; Using
+    the formula</p>
+    <p><span class="math display">$$a_n = \frac{1}{\pi}
+    \int_{-\pi}^{\pi}f(x)\cos{nx}dx$$</span></p>
+    <p>Now break it down as before and solve the integral and we get:</p>
+    <p><span
+    class="math display"><em>a</em><sub><em>n</em></sub> = 0</span></p>
+    <p>This means that there are no terms of cosine present in the Fourier
+    series.</p>
+    <p>Rpeating the same we find <span
+    class="math inline"><em>b</em><sub><em>n</em></sub></span> and get the
+    following result:</p>
+    <p>Now we get two cases when n is odd and n is even, lets consider them
+    individually.</p>
+    <ol>
+    <li><p>Case 1: n is even</p>
+    <p>When n is even and you substitute values you get 0, This means there
+    are no even terms.</p></li>
+    <li><p>Case2: n is odd</p>
+    <p>When n is odd, we obtain this equation: <span
+    class="math display">$$b_n = \frac{4k}{n\pi}$$</span> so for all odd
+    values of n we get: <span class="math display">$$b_1 = \frac{4k}{\pi},\
+    b_2 = \frac{4k}{3\pi},\ b_3= \frac{4k}{5\pi}$$</span> and so on.</p>
+    <p>Substituting all the values in the original formula we get</p>
+    <p><span class="math display">$$f(x) =0+ \sum_{n=1}^{\infty }(0 + b_{n}
+    \sin{nx})$$</span> <span class="math inline">∴</span> we can say, <span
+    class="math display">$$f(x) = \frac{4k}{\pi} (\sin{x} +
+    \frac{1}{3}\sin{3x} + \frac{1}{5}\sin{5x}+....)$$</span></p>
+    <p>Now if we plot this function against the original graph we get
+    this:</p>
+    <p><span class="spurious-link"
+    target="~/desmos-graph.png"><em>~/desmos-graph.png</em></span></p>
+    <p>red line: original function black line: calculated function</p>
+    <p>Hence we can say that any function <span
+    class="math inline"><em>f</em>(<em>x</em>)</span> can be represented as
+    a sum of sine and cosine waves.</p>
+    <p>As we can see the function we just calculate is very close to what
+    the original function looks.</p>
+    <p>That's it for this blog, In this series, next blog I'll be probably
+    covering Taylor's Series.</p>
+    <p>Thanks for reading!~</p></li></div>
+    </ol>
+    </section>
+    </div>
+</body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dazai - home</title>
+  <link rel="stylesheet" href="../blog_style.css">
+</head>
+<body onload="document.body.style.opacity='1'">
+<div class="main-container">
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">blog</a>
+      </li>
+
+      <li>
+        <a href="../projects.html">projects</a>
+      </li>
+      
+      <li>
+        <a href="../index.html">about me</a>
+      </li>
+    
+    </ul>
+    </nav>
+
+
+<div class="content">
+    <p>I recently had the urge to learn about CPUs and Microprocessors, So I dug down to the roots of how these amazing machines work. We honestly underestimate how much insane engineering goes behind these. But these are not that complex if you understand what exactly goes on.</p>
+    <br>
+    <p>Lets get the basics down.</p>
+
+    <h1>From 0s and 1s to performing operations</h1>
+    <br>
+    <p>As we know, the basic language of a cpu is binary i.e. 0 and 1. But how do you perform addition of two numbers just using 0 and 1? We use something called logic gates.</p>
+    <br>
+    <p>Arrange your everyday switches in a particluar order and you get a logic gate. 0 represents a state of off, and 1 represents a state of on. I won't be diving deeper into those in this blogpost, as it would be too long and boring. Now we arrange these logic gates in a specfic way and then we can add two binary numbers! Combine those together we can add more numbers and do more complex operations.</p>
+    <br>
+    <h2>A small history lesson</h2>
+    <p>This goes all the way back to the 20th century, when Intel came with a breakthrough with their Intel 4004 microprocessor in 1971, marking a significant milestone and laid the foundation for modern CPUs. Shortly afterwards, Intel released a whole family of microprocessors which lead to the personal computer revolution. In 1978, Intel introduced their very first microprocessor, the beloved 8086, which lead the foundation for the x86 architecture which you see in your computers today.</p>
+    <h2>How we actually communicate with these silicon wafers</h2>
+    <p>We communicate with the CPU with instructions They are a combination of commands which tell the CPU what to do. E.g. I want to store my data in the memory of the microprocessor. I will carry this out by giving the cpu an instruction to write a certain memory location with the data, or move it around as we want. Similarly we can also add these numbers and do other operations on them.</p>
+    <br>
+    <p>Now these instructions are also stored in the memory of the microprocessor, so to execute these we use an instruction cycle. It will fetch the next instruction from memory, decode it and execute it. This cycle repeats till we ask it to stop.</p>
+    <br>
+
+    <h2>Core Components</h2>
+    <h3>Control Unit</h3>
+    <p>Consider this guy as the head of the operations he manages the instruction cycle and coordinates all the tasks performed.</p>
+    <h3>Alithmetic Logic Unit</h3>
+    <p>This guy performs all the required operations given to him by the control unit from the memory like addition, subtraction, and comparisons.</p>   
+    <h3>Registers</h3>
+    <p>They are the storage go-downs which are built for easy access of some data which is needed urgently or to store temporarily.</p>
+    <br>
+    <p>All these together allow the CPU to do some meaningful work.</p>
+
+    <h2><i>speed</i></h2>
+    <br>
+    <p>A CPU has an internal clock which determines how many instructions it can process. This speed is called the /clock speed/. Obviously, the higher the clock-speed the more instructions it can process in a unit of time. In modern CPUs this number is measured in Giga Hertz (GHz), now you know what it exactly means when you have a 5.6 GHz processor, that is 5.6 billion clock cycles in one second! Blazingly fast.</p>
+    <br>
+    <p>But wait, this is just one guy doing everything, why not more?! Imagine you are doing chores, one guy doing everything is much more time taking than multiple people doing multiple chores at once. Similarly a concept of /cores/ was introduced. The more cores you have, the more tasks you can run at once. For example one core maybe working on the game you are playing while other core is handling the music and so on.</p>
+    <br>
+    <p>There are a lot more things that can be covered here, but I hope this blog post has shed some light on the fascinating world of CPUs and how they work.</p>
+    <br>
+    <p>I also have a relevant project which emulates a super simple CPU which can be found on github.</p>
+    <br>
+    <br>
+    <p>Thanks for reading!~</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+</div>
+
+</body>

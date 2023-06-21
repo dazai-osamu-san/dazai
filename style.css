@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -9,14 +10,16 @@ body {
   font-family: "Cormorant Garamond", serif;
   color: #424242;
   background-color: #D4D4D4;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 
 .all-container {
   width: 936px;
-  margin: 0 auto;
+  margin: 75px auto;
+
 }
 
-// NAVIGATION BAR //
 nav{
   display: flex;
   align-items: left;
@@ -41,7 +44,6 @@ nav ul li a{
 }
 
 
-// MAIN //
 .main-container{
   display: flex;
   flex-direction: column;
@@ -90,6 +92,8 @@ nav ul li a{
 }
 
 .main-container .secondary-text p {
+  font-family: Cormorant Garamond;
+  font-weight: lighter;
   padding-top: 11px;
   font-size: 24px;
 }
@@ -97,7 +101,7 @@ nav ul li a{
 
 
 
-// PHONE OPTIMIZATION //
+
 @media(max-width: 500px){
   *{
     padding:0;
@@ -109,7 +113,7 @@ nav ul li a{
     display: flex;
     align-items: left;
     justify-content: space-evenly;
-    padding-top: 75px;
+    padding-top: 100px;
   }
   
   nav ul{
