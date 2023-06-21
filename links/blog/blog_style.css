@@ -13,6 +13,13 @@ body {
   transition: opacity 1s ease-in;
 }
 
+
+#graphs{
+  display: block;
+  justify-content: center;
+  scale: 50%;
+}
+
 .startrail {
   display:flex;
   justify-content: center;
